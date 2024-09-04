@@ -1,8 +1,9 @@
 <template>
-  <NavBarComponent :logo="logo_src" :alt="app_name" />
-  <router-view />
-  <div style="margin-top: 15rem"></div>
-  <FooterComponent />
+  <div id="main-container">
+    <NavBarComponent :logo="logo_src" :alt="app_name" />
+    <router-view />
+    <FooterComponent />
+  </div>
 </template>
 
 <script>
@@ -24,6 +25,11 @@ export default {
 </script>
 
 <style>
+#main-container {
+  display: grid;
+  align-content: space-between;
+  min-height: 100vh;
+}
 * {
   font-family: Helvetica;
   padding: 0;

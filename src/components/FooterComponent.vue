@@ -20,7 +20,5 @@ footer {
   align-items: center;
   justify-content: center;
   width: 100%;
-  position: fixed;
-  bottom: 0;
 }
 </style>
